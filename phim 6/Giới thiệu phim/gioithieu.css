@@ -1,0 +1,159 @@
+/* CSS cho header và thanh cuối trang */
+body {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+  background-color: #222;
+  color: white;
+  font-weight: bold;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1); /* Độ mờ */
+  z-index: -1;
+}
+
+.khung-chua {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header, #thanhCuoiTrang {
+  background-color: #333;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.thanh-dieu-huong {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.logo {
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  border: 2px solid red;
+  border-radius: 10px; /* Hình chữ nhật với góc bo tròn nhẹ */
+  background-color: #FF4500;
+}
+
+.thanh-dieu-huong a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.thanh-dieu-huong a.dangnhap, 
+.thanh-dieu-huong a.dangki {
+  border: 2px solid white;
+  border-radius: 20px; /* Hình bầu dục */
+  background-color: #7FFF00; /* Nền hồng nhạt */
+}
+
+/* CSS cho video và thông tin phim */
+.noi-dung {
+  display: flex;
+  padding: 20px;
+  padding-bottom: 20px;
+}
+
+.video-danh-gia {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-danh-gia video {
+  width: 100%;
+  height: auto;
+}
+
+.thong-tin-phim {
+  flex: 1;
+  margin-left: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  font-weight: normal; /* Không in đậm */
+}
+
+.thong-tin-phim h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.thong-tin-phim p {
+  font-size: 1.2em;
+  margin-top: 0;
+}
+
+.nut-xem {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.nut-xem a {
+  color: white;
+  text-decoration: none;
+}
+
+.nut-xem:hover {
+  background-color: darkred;
+}
+
+/* CSS cho phần quảng cáo */
+.quang-cao {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 5cm;
+}
+
+.qc-item {
+  text-align: center;
+  margin-right: 7mm;
+}
+
+.qc-anh {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.qc-item a {
+  display: block;
+  margin-top: 50px;
+  color: white;
+  text-decoration: none;
+}
+
+#thanhCuoiTrang {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 5cm;
+}

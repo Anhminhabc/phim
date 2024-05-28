@@ -1,0 +1,174 @@
+/* CSS cho header và thanh cuối trang */
+body {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+  background-image: url("nenlienhe.jpg"); /* Đường dẫn đến hình ảnh nền */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  font-weight: bold;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1); /* Độ mờ */
+  z-index: -1;
+}
+
+.khung-chua {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header, #thanhCuoiTrang {
+  background-color: #333;
+  padding: 10px 0;
+  width: 100%;
+  background-color:#333;
+}
+
+.thanh-dieu-huong {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.logo {
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  border: 2px solid red;
+  border-radius: 10px; /* Hình chữ nhật với góc bo tròn nhẹ */
+  background-color: #FF4500;
+}
+
+.thanh-dieu-huong a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.thanh-dieu-huong a.dangnhap, .thanh-dieu-huong a.dangki {
+  border: 2px solid white;
+  border-radius: 20px; /* Hình bầu dục */
+  background-color: #7FFF00; /* Nền hồng nhạt */
+}
+
+/* CSS for Social Icons */
+.social-icons {
+    margin-top: 100px;
+    display:flex;
+    justify-content:center;
+}
+
+.social-icons a {
+    margin: 0 30px;
+    margin-bottom:50px;
+}
+
+.social-icons img {
+    width: 150px; /* Độ rộng của icon */
+    height: 150px;
+
+}
+
+/* CSS for Donate Button */
+.nut {
+    padding: 40px 80px;
+    background-color: #ff69b4; /* Màu hồng đậm */
+    color: white;
+    border: none;
+    border-radius: 50px; /* Tạo nút tròn */
+    font-size: 35px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-left:460px !important;
+    margin-top:50px;
+    font-weight:bold;
+}
+
+.nut::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(45deg, #f00, #0f0, #00f, #f00);
+    border-radius: 50%;
+    transition: all 0.8s;
+    transform: translate(-50%, -50%) rotate(45deg);
+    z-index: 0;
+}
+
+.nut:hover::before {
+    width: 100%;
+    height: 100%;
+}
+
+.donate-section button a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+  
+}
+
+.donate-section button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    animation: shine 2s infinite linear;
+    transition: all 0.3s;
+}
+
+@keyframes shine {
+    0% {
+        background-position: top left;
+    }
+    100% {
+        background-position: top right;
+    }
+}
+p {
+    margin-top: 10px;
+    font-style: italic;
+    margin-bottom:200px;
+  /* CSS for Rainbow Text */
+
+    font-size: 28px;
+    font-weight: bold;
+    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red); /* 7 màu của cầu vồng */
+-webkit-background-clip: text; /* Áp dụng chuyển đổi màu nền cho chữ */
+    color: transparent; /* Ẩn màu chữ gốc */
+text-shadow: 0 0 10px rgba(255,255,255,0.5); /* Tạo hiệu ứng viền sáng */
+}
+
+p {
+    margin-top: 30px;
+    font-style: italic;
+    margin-bottom:200px;
+  /* CSS for Rainbow Text */
+
+    font-size: 28px;
+    font-weight: bold;
+    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red); /* 7 màu của cầu vồng */
+    -webkit-background-clip: text; /* Áp dụng chuyển đổi màu nền cho chữ */
+    color: transparent; /* Ẩn màu chữ gốc */
+text-shadow: 0 0 10px rgba(255,255,255,0.5); /* Tạo hiệu ứng viền sáng */
+    margin-left:100px;
+}
